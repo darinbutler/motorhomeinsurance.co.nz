@@ -8,9 +8,9 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: '15+', label: 'Years Experience' },
-  { value: '$500M+', label: 'Assets Covered' },
-  { value: '24hr', label: 'Fast Impartial Quotes' },
+  { value: '38,000+', label: 'Motorhomes in NZ' },
+  { value: '6+', label: 'Providers Compared' },
+  { value: 'Free', label: 'Fast Impartial Quotes' },
   { value: '✓', label: 'NZ Owned & Operated' },
 ];
 
@@ -19,19 +19,31 @@ function AnimatedCounter({ value, label, isVisible }: { value: string; label: st
 
   useEffect(() => {
     if (!isVisible) return;
-    const numericValue = parseInt(value.replace(/[^\d]/g, ''));
-    const suffixes = value.match(/[^\d]+$/)?.[0] || '';
+
+    // Non-numeric values (e.g. '✓', 'Free') — display immediately, no animation
+    const numericPart = value.replace(/[^0-9]/g, '');
+    if (!numericPart) {
+      setDisplayValue(value);
+      return;
+    }
+
+    const numericValue = parseInt(numericPart, 10);
+    const prefix = value.match(/^[^0-9]*/)?.[0] ?? '';
+    const suffix = value.match(/[^0-9]+$/)?.[0] ?? '';
+
     let current = 0;
-    const increment = Math.ceil(numericValue / 50);
+    const increment = Math.max(Math.ceil(numericValue / 50), 1);
+
     const interval = setInterval(() => {
       current += increment;
       if (current >= numericValue) {
-        setDisplayValue(numericValue + suffixes);
+        setDisplayValue(prefix + numericValue.toLocaleString() + suffix);
         clearInterval(interval);
       } else {
-        setDisplayValue(current + suffixes);
+        setDisplayValue(prefix + current.toLocaleString() + suffix);
       }
     }, 30);
+
     return () => clearInterval(interval);
   }, [isVisible, value]);
 
