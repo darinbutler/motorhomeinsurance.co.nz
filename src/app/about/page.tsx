@@ -91,19 +91,22 @@ export default function AboutPage() {
       {/* Stats Section */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-4">
             {[
-              { label: 'Years Experience', value: '15+' },
-              { label: 'Assets Covered', value: '$500M+' },
-              { label: 'Free Quotes', value: '24hr' },
-              { label: 'NZ Owned', value: '✓' },
+              { label: 'Motorhomes on NZ Roads', value: '38,000+', context: 'Industry stat' },
+              { label: 'NZ Motorhome Market Value', value: '$2B+', context: 'Industry stat' },
+              { label: 'Quotes Returned Within', value: '24hrs', context: 'Our service' },
+              { label: 'NZ Owned & Operated', value: '✓', context: 'Our service' },
             ].map((stat) => (
               <div key={stat.label} className="text-center p-6 rounded-2xl bg-sky-50 border border-sky-200">
                 <div className="text-4xl font-bold text-sky-600 mb-2">{stat.value}</div>
                 <div className="text-slate-700 font-medium">{stat.label}</div>
+                <div className="text-xs text-slate-400 mt-1">{stat.context}</div>
               </div>
             ))}
           </div>
+
+          <p className="text-xs text-slate-400 text-center mb-12">Industry stats sourced from NZTA registration data and NZMCA market research. Service stats reflect our comparison platform.</p>
 
           <div className="space-y-12">
             <div>
