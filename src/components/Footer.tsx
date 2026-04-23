@@ -14,8 +14,10 @@ const footerLinks = {
     title: 'Company',
     links: [
       { label: 'About', href: '/about' },
-      { label: 'Contact', href: '/contact' },
-      { label: 'FAQs', href: '/faqs' },
+      { label: 'Making a Claim', href: '/claims' },
+                { label: 'Contact', href: '/contact' },
+      { label: 'Making a Claim', href: '/claims' },
+                { label: 'FAQs', href: '/faqs' },
       { label: 'Blog', href: '/blog' },
       { label: 'Coverage Guide', href: '/coverage' },
       { label: 'Compare Providers', href: '/compare' },
