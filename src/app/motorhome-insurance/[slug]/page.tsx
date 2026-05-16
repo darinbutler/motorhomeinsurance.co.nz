@@ -479,7 +479,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1608161317310-c079ae39d224?w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(/hero-motorhome-2.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
