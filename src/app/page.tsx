@@ -21,6 +21,9 @@ import {
   Users,
   Flame,
   ChevronDown,
+  ArrowRight,
+  MapPin,
+  Star,
 } from 'lucide-react';
 
 interface FAQItem {
@@ -68,7 +71,7 @@ export default function HomePage() {
   const whyEssential = [
     {
       icon: AlertTriangle,
-      title: 'Standard Car Insurance Doesn\'t Cover You',
+      title: 'Standard Car Insurance Won\'t Cover You',
       description: 'Most car policies only cover your motorhome while driving. Once parked at a campground, you\'re uninsured without standalone motorhome cover.',
     },
     {
@@ -84,8 +87,17 @@ export default function HomePage() {
     {
       icon: Wallet,
       title: 'Protect Your Investment',
-      description: 'Motorhomes cost $20,000-$150,000+. Don\'t leave this investment exposed without proper standalone insurance.',
+      description: 'Motorhomes cost $20,000–$150,000+. Don\'t leave this investment exposed without proper standalone insurance.',
     },
+  ];
+
+  const whyChooseUs = [
+    'Specialist NZ motorhome insurance brokers',
+    'Compare quotes from multiple top insurers',
+    'Campervans, Class A, B & C motorhomes, coaches',
+    'Agreed value and market value options',
+    'Self-contained and imported motorhomes covered',
+    'No obligation — results within 24 hours',
   ];
 
   const displayedFAQs = (homepageStaticFAQs as FAQItem[]);
@@ -144,17 +156,16 @@ export default function HomePage() {
       />
 
       <main>
-        {/* Hero Section */}
+
+        {/* ── HERO ────────────────────────────────────────────── */}
         <section className="relative min-h-[90vh] lg:min-h-[100vh] flex items-center overflow-hidden">
           <HeroCarousel />
-
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-28 pb-16 lg:pt-0 lg:pb-0">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <Shield className="w-4 h-4 text-sky-400" />
                 <span className="text-sm text-white font-medium">Connect with Licensed Insurance Brokers</span>
               </div>
-
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 Protect Your Motorhome
                 <span className="block bg-gradient-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
@@ -162,16 +173,14 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-200 mb-8 max-w-2xl leading-relaxed">
-                Compare top NZ motorhome insurance providers in minutes. Campervans, Class A, B & C motorhomes, coaches — get comprehensive cover tailored to your needs.
+                Compare top NZ motorhome insurance providers in minutes. Campervans, Class A, B &amp; C motorhomes, coaches — get comprehensive cover tailored to your needs.
               </p>
-
               <div className="flex flex-wrap gap-3 mb-10">
                 {[
                   { icon: Shield, text: 'NZ Owned & Operated' },
                   { icon: CheckCircle2, text: 'No Broker Fees' },
                   { icon: Lock, text: '256-bit SSL Secure' },
                   { icon: Zap, text: '24hr Response' },
-                  { icon: MessageCircle, text: 'No Broker Fees' },
                 ].map((badge) => {
                   const Icon = badge.icon;
                   return (
@@ -182,110 +191,219 @@ export default function HomePage() {
                   );
                 })}
               </div>
-
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/#quote-form" className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-lg shadow-sky-500/25 hover:shadow-xl hover:-translate-y-0.5">
-                  Get a Quote <span>→</span>
+                  Get a Quote <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link href="/compare" className="bg-white/15 hover:bg-white/25 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-300 border border-white/30 inline-flex items-center justify-center gap-2 backdrop-blur-sm">
-                  Compare Providers <span>→</span>
+                  Compare Providers <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
           </div>
         </section>
 
+        {/* ── STATS ───────────────────────────────────────────── */}
         <AnimatedStats />
 
-        {/* How It Works Section */}
+        {/* ── HOW IT WORKS ─────────────────────────────────────── */}
         <HowItWorksSection />
 
-        {/* Why Motorhome Insurance Matters */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Why Motorhome Insurance Matters</h2>
-              <p className="text-slate-600 text-lg">The motorhome market is booming — and so is the need for proper protection.</p>
-            </div>
+        {/* ── WHY IT MATTERS — dark split-layout with lifestyle image ── */}
+        <section className="relative overflow-hidden bg-slate-900">
+          {/* Subtle texture overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-sky-900/20 via-transparent to-blue-900/20 pointer-events-none" />
 
-            <div className="space-y-6">
-              <p className="text-lg text-slate-700 leading-relaxed">
-                With over 35,000 registered motorhomes on NZ roads and the fleet growing approximately 8% annually, more Kiwis than ever are hitting the open road. From compact campervans to luxury Class A motorhomes, the diversity of the market reflects a love of adventure and freedom on wheels. Whether you're taking weekend trips around the North Island or embarking on a full-time nomadic lifestyle, your motorhome represents a significant investment that deserves proper protection.
-              </p>
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-              <p className="text-lg text-slate-700 leading-relaxed">
-                The average motorhome value ranges from $40,000 to over $200,000, with self-contained models commanding premium prices. Without standalone motorhome insurance, this investment sits completely unprotected when parked at campsites, stored at home, or left overnight during your travels. The Financial Markets Authority (FMA) and Insurance Council of NZ (ICNZ) both recommend dedicated motorhome cover because standard car policies simply don't provide adequate protection for vehicles that function as temporary homes.
-              </p>
+              {/* Text column */}
+              <div>
+                <p className="text-sky-400 text-sm font-semibold uppercase tracking-widest mb-3">Why It Matters</p>
+                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+                  Your Motorhome Deserves<br />
+                  <span className="bg-gradient-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+                    Specialist Protection
+                  </span>
+                </h2>
+                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                  With over 38,000 motorhomes on NZ roads — a fleet growing 8% annually — more Kiwis than ever are embracing life on wheels. From weekend campervans to full-time luxury coaches, your motorhome is both a vehicle and a home. Standard car insurance simply wasn't built for that.
+                </p>
+                <p className="text-slate-400 leading-relaxed mb-8">
+                  The average motorhome is worth $40,000–$200,000. Once you park at a freedom camping site, a motorhome park, or your driveway, most car policies stop covering you. Standalone motorhome insurance bridges that gap — protecting your investment 24/7, wherever your adventures take you.
+                </p>
 
-              <p className="text-lg text-slate-700 leading-relaxed">
-                Consider this: you're enjoying a week at a scenic motorhome park when a storm causes significant water damage. Without dedicated cover, you're looking at thousands of dollars in repair costs. Worse, if someone is injured on your motorhome property or your vehicle damages someone else's car, your liability exposure could exceed $20 million. Under the Freedom Camping Act 2011, some sites also carry specific insurance requirements — standalone motorhome insurance ensures compliance and provides 24/7 protection whether you're driving, parked at an official campground, or freedom camping.
-              </p>
-            </div>
+                {/* Why Choose Us bullets */}
+                <ul className="space-y-3 mb-8">
+                  {whyChooseUs.map((item, i) => (
+                    <li key={i} className="flex items-center gap-3">
+                      <span className="w-5 h-5 rounded-full bg-sky-500/20 border border-sky-500/40 flex items-center justify-center flex-shrink-0">
+                        <CheckCircle2 className="w-3 h-3 text-sky-400" />
+                      </span>
+                      <span className="text-slate-300 text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
 
-            <div className="mt-8 text-center">
-              <Link href="/coverage" className="text-sky-600 font-semibold hover:text-sky-700 transition-colors inline-flex items-center gap-2">
-                Explore our coverage options <span>→</span>
-              </Link>
+                <Link
+                  href="/coverage"
+                  className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                >
+                  Explore Coverage Options <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Image column */}
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/40">
+                  <img
+                    src="https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?w=800&h=600&fit=crop"
+                    alt="Motorhome campervan parked at a scenic New Zealand location"
+                    className="w-full h-[420px] lg:h-[500px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
+                  {/* Floating stat card */}
+                  <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4">
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 rounded-full bg-sky-500 flex items-center justify-center flex-shrink-0">
+                        <MapPin className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <p className="text-white font-bold text-sm">Covered Nationwide</p>
+                        <p className="text-slate-300 text-xs">From Northland to Southland — wherever your journey takes you</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Decorative ring */}
+                <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-full border border-sky-500/20 pointer-events-none" />
+                <div className="absolute -top-6 -left-6 w-32 h-32 rounded-full border border-blue-400/10 pointer-events-none" />
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Coverage Types Grid */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto">
+        {/* ── COVERAGE TYPES — slate-50 with image-topped cards ── */}
+        <section className="py-20 sm:py-28 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
+              <p className="text-sky-600 text-sm font-semibold uppercase tracking-widest mb-3">What We Cover</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Coverage for Every Motorhome Type</h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-lg">Whether you own a campervan, Class A, B or C motorhome, or coach, we have protection tailored for you</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {coverageTypes.map((type) => (
-                <Link key={type.slug} href={`/types/${type.slug}`} className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 hover:border-sky-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center mb-5 shadow-lg shadow-sky-500/20 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-2xl">{type.icon}</span>
+                <Link
+                  key={type.slug}
+                  href={`/types/${type.slug}`}
+                  className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:border-sky-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col"
+                >
+                  {/* Gradient header bar */}
+                  <div className="h-2 bg-gradient-to-r from-sky-500 to-blue-600" />
+                  <div className="p-6 sm:p-7 flex flex-col flex-1">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center mb-5 shadow-lg shadow-sky-500/20 group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl">{type.icon}</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">{type.title}</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-1">{type.description}</p>
+                    <span className="text-sky-600 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                      Learn more <ArrowRight className="w-3.5 h-3.5" />
+                    </span>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">{type.title}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">{type.description}</p>
-                  <span className="text-sky-600 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Learn more <span>→</span>
-                  </span>
                 </Link>
               ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <Link
+                href="/coverage"
+                className="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-700 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors shadow-lg"
+              >
+                View All Coverage Options <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* Why Motorhome Insurance is Essential */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto">
+        {/* ── LIFESTYLE CTA BANNER — full-width image with overlay ── */}
+        <section
+          className="relative py-24 sm:py-32 overflow-hidden"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1920&h=800&fit=crop)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 60%',
+            backgroundAttachment: 'fixed',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-slate-900/40" />
+          <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-sky-400 text-sm font-semibold uppercase tracking-widest mb-4">The Open Road Awaits</p>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
+              Adventure With Confidence
+            </h2>
+            <p className="text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed">
+              The best road trips start with peace of mind. Get the right motorhome insurance so the only thing you&apos;re thinking about is where to stop next.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/#quote-form"
+                className="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-sky-500/30 hover:-translate-y-0.5 transition-all"
+              >
+                Get Your Quote <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/compare"
+                className="inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold px-8 py-4 rounded-xl border border-white/30 backdrop-blur-sm transition-all"
+              >
+                Compare Providers
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ── WHY ESSENTIAL — dark image-backed cards ── */}
+        <section
+          className="relative py-20 sm:py-28 overflow-hidden"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1596470693312-9a3686a0af0f?w=1920&h=1080&fit=crop)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/92 via-slate-800/88 to-sky-900/90" />
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Why Motorhome Insurance is Essential</h2>
-              <p className="text-slate-600 max-w-2xl mx-auto text-lg">Your car insurance probably doesn&apos;t cover your motorhome the way you think it does.</p>
+              <p className="text-sky-400 text-sm font-semibold uppercase tracking-widest mb-3">Protection That Matters</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Why Motorhome Insurance is Essential</h2>
+              <p className="text-sky-200 max-w-2xl mx-auto text-lg">Your car insurance probably doesn&apos;t cover your motorhome the way you think it does.</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {whyEssential.map((item, idx) => {
                 const Icon = item.icon;
                 return (
-                  <div key={idx} className="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-100 hover:border-sky-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center mb-5 shadow-lg shadow-sky-500/20">
+                  <div key={idx} className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 sm:p-7 hover:bg-white/12 hover:border-sky-400/40 hover:-translate-y-1 transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center mb-5 shadow-lg shadow-sky-500/30">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>
+                    <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                    <p className="text-slate-300 text-sm leading-relaxed">{item.description}</p>
                   </div>
                 );
               })}
             </div>
 
-            <div className="mt-12 bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-6 sm:p-8">
+            {/* Did You Know callout */}
+            <div className="mt-10 bg-sky-500/15 border border-sky-400/30 rounded-2xl p-6 sm:p-8 backdrop-blur-sm">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-sky-500 flex items-center justify-center flex-shrink-0">
                   <AlertTriangle className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 mb-1">Did You Know?</h4>
-                  <p className="text-slate-700 text-sm leading-relaxed">
+                  <h4 className="font-bold text-white mb-1">Did You Know?</h4>
+                  <p className="text-slate-300 text-sm leading-relaxed">
                     Most comprehensive car insurance policies only cover your motorhome while you&apos;re driving it. Once you park at a campsite, in your driveway, or at a storage facility, your motorhome is generally considered a separate, uninsured asset. Standalone motorhome insurance covers you 24/7 — whether you&apos;re driving or parked.
                   </p>
                 </div>
@@ -294,10 +412,54 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
-          <div className="max-w-3xl mx-auto">
+        {/* ── BLOG GUIDES ── */}
+        <section className="py-20 sm:py-28 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
+              <p className="text-sky-600 text-sm font-semibold uppercase tracking-widest mb-3">Expert Guides</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Motorhome Insurance Guides</h2>
+              <p className="text-slate-600 max-w-2xl mx-auto text-lg">Expert guides to help you find the right motorhome insurance</p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {blogPosts.slice(0, 3).map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:border-sky-300 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+                  <div className="relative h-52 overflow-hidden bg-slate-200">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
+                    <span className="absolute top-4 left-4 bg-sky-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">
+                      {post.category}
+                    </span>
+                  </div>
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors leading-snug">{post.title}</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed flex-1">{post.excerpt}</p>
+                    <div className="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between">
+                      <p className="text-xs text-slate-500">{new Date(post.date).toLocaleDateString('en-NZ', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                      <span className="text-xs font-semibold text-sky-600">{post.readTime}</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link href="/blog" className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition-colors">
+                Read all articles <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ── FAQ ── */}
+        <section className="py-20 sm:py-28 bg-slate-50">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <p className="text-sky-600 text-sm font-semibold uppercase tracking-widest mb-3">Common Questions</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
               <p className="text-slate-600 text-lg">Find answers to common questions about motorhome insurance</p>
             </div>
@@ -319,56 +481,16 @@ export default function HomePage() {
             </div>
 
             <div className="text-center mt-10">
-              <Link href="/faqs" className="text-sky-600 font-semibold hover:text-sky-700 transition-colors inline-flex items-center gap-2">
-                View all FAQs <span>→</span>
+              <Link href="/faqs" className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition-colors">
+                View all FAQs <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Blog Preview Section */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-14">
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Motorhome Insurance Guides</h2>
-              <p className="text-slate-600 max-w-2xl mx-auto text-lg">Expert guides to help you find the right motorhome insurance</p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {blogPosts.slice(0, 3).map((post) => (
-                <Link key={post.slug} href={`/blog/${post.slug}`} className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:border-sky-300 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group flex flex-col">
-                  <div className="relative h-48 overflow-hidden bg-slate-200">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent" />
-                  </div>
-                  <div className="p-6 flex flex-col flex-1">
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-xs font-semibold text-sky-600 uppercase tracking-widest">{post.category}</span>
-                      <span className="text-xs text-slate-500">{post.readTime}</span>
-                    </div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">{post.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed flex-1">{post.excerpt}</p>
-                    <div className="mt-4 pt-4 border-t border-slate-200">
-                      <p className="text-xs text-slate-500">{new Date(post.date).toLocaleDateString('en-NZ', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-
-            <div className="text-center mt-10">
-              <Link href="/blog" className="text-sky-600 font-semibold hover:text-sky-700 transition-colors inline-flex items-center gap-2">
-                Read all articles <span>→</span>
-              </Link>
-            </div>
-          </div>
-        </section>
-
+        {/* ── QUOTE FORM ── */}
         <QuoteForm mode="full" />
+
       </main>
     </>
   );
