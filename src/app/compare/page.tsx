@@ -7,6 +7,9 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 export const metadata = {
   title: 'Compare Motorhome Insurance Providers NZ | MotorHomeInsurance.co.nz',
   description: 'Compare NZ motorhome insurance providers side-by-side. See ratings, prices, features, and choose the best coverage for your motorhome.',
+  alternates: { canonical: 'https://www.motorhomeinsurance.co.nz/compare/' },
+  openGraph: { title: 'Compare Motorhome Insurance Providers NZ', description: 'Compare NZ motorhome insurance providers side-by-side. See ratings, prices, features, and choose the best coverage for your motorhome.', url: 'https://www.motorhomeinsurance.co.nz/compare/', siteName: 'MotorHomeInsurance.co.nz', type: 'website', locale: 'en_NZ', images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }] },
+  twitter: { card: 'summary_large_image', title: 'Compare Motorhome Insurance Providers NZ', description: 'Compare NZ motorhome insurance providers side-by-side.', images: ['https://www.motorhomeinsurance.co.nz/og-image.png'] },
 };
 
 const breadcrumbs = [

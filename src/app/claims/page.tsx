@@ -5,7 +5,9 @@ import { AlertCircle, Clock, Mail, FileText, Heart, ShieldCheck, ChevronRight } 
 export const metadata: Metadata = {
   title: 'Making a Claim | MotorHomeInsurance.co.nz',
   description: 'How to make a motorhome and campervan insurance claim, our complaints process, and support for vulnerable customers. MotorHomeInsurance.co.nz is a referral service — claims are handled directly by your insurer.',
-  alternates: { canonical: 'https://motorhomeinsurance.co.nz/claims/' },
+  alternates: { canonical: 'https://www.motorhomeinsurance.co.nz/claims/' },
+  openGraph: { title: 'Making a Claim | MotorHomeInsurance.co.nz', description: 'How to make a motorhome and campervan insurance claim, our complaints process, and support for vulnerable customers.', url: 'https://www.motorhomeinsurance.co.nz/claims/', siteName: 'MotorHomeInsurance.co.nz', type: 'website', locale: 'en_NZ', images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }] },
+  twitter: { card: 'summary_large_image', title: 'Making a Claim | MotorHomeInsurance.co.nz', description: 'How to make a motorhome insurance claim and our complaints process.', images: ['https://www.motorhomeinsurance.co.nz/og-image.png'] },
 };
 
 export default function ClaimsPage() {

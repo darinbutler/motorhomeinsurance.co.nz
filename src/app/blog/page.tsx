@@ -5,6 +5,9 @@ import QuoteForm from '@/components/QuoteForm';
 export const metadata = {
   title: 'Motorhome Insurance Blog | MotorHomeInsurance.co.nz',
   description: 'Expert guides and insights on motorhome insurance, coverage types, cost-saving tips, and choosing the right provider for your NZ motorhome.',
+  alternates: { canonical: 'https://www.motorhomeinsurance.co.nz/blog/' },
+  openGraph: { title: 'Motorhome Insurance Blog | MotorHomeInsurance.co.nz', description: 'Expert guides and insights on motorhome insurance, coverage types, cost-saving tips, and choosing the right provider for your NZ motorhome.', url: 'https://www.motorhomeinsurance.co.nz/blog/', siteName: 'MotorHomeInsurance.co.nz', type: 'website', locale: 'en_NZ', images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }] },
+  twitter: { card: 'summary_large_image', title: 'Motorhome Insurance Blog | MotorHomeInsurance.co.nz', description: 'Expert guides and insights on motorhome insurance for NZ motorhome owners.', images: ['https://www.motorhomeinsurance.co.nz/og-image.png'] },
 };
 
 export default function BlogPage() {
@@ -14,7 +17,7 @@ export default function BlogPage() {
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1596470693312-9a3686a0af0f?w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(/hero-motorhome-7.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

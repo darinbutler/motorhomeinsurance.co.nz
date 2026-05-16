@@ -108,4 +108,4 @@ Disallow: /
 Crawl-delay: 10
 
 # Sitemap
-Sitemap: https://motorhomeinsurance.co.nz/sitemap.xml
+Sitemap: https://www.motorhomeinsurance.co.nz/sitemap.xml

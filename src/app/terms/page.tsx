@@ -3,6 +3,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Terms & Conditions | MotorHomeInsurance.co.nz',
   description: 'Terms and conditions for using MotorHomeInsurance.co.nz. Please read before using our no-fee motorhome insurance comparison service.',
+  alternates: { canonical: 'https://www.motorhomeinsurance.co.nz/terms/' },
+  openGraph: { title: 'Terms & Conditions | MotorHomeInsurance.co.nz', description: 'Terms and conditions for using MotorHomeInsurance.co.nz, a no-fee motorhome insurance comparison service.', url: 'https://www.motorhomeinsurance.co.nz/terms/', siteName: 'MotorHomeInsurance.co.nz', type: 'website', locale: 'en_NZ', images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }] },
+  twitter: { card: 'summary_large_image', title: 'Terms & Conditions | MotorHomeInsurance.co.nz', description: 'Terms and conditions for our no-fee motorhome insurance comparison service.', images: ['https://www.motorhomeinsurance.co.nz/og-image.png'] },
 };
 
 export default function TermsPage() {
@@ -12,7 +15,7 @@ export default function TermsPage() {
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1626680114529-3f6ffa002b80?w=1920&h=600&fit=crop)',
+          backgroundImage: 'url(/hero-motorhome-5.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

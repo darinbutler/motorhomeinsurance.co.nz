@@ -5,6 +5,9 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 export const metadata = {
   title: 'Contact MotorHomeInsurance.co.nz | Get a Quote',
   description: 'Contact our motorhome insurance team. Email hello@cover4you.co.nz or fill out the quick quote form for an impartial comparison from licensed brokers.',
+  alternates: { canonical: 'https://www.motorhomeinsurance.co.nz/contact/' },
+  openGraph: { title: 'Contact MotorHomeInsurance.co.nz', description: 'Contact our motorhome insurance team for impartial quotes from licensed NZ brokers.', url: 'https://www.motorhomeinsurance.co.nz/contact/', siteName: 'MotorHomeInsurance.co.nz', type: 'website', locale: 'en_NZ', images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }] },
+  twitter: { card: 'summary_large_image', title: 'Contact MotorHomeInsurance.co.nz', description: 'Contact our motorhome insurance team for impartial quotes.', images: ['https://www.motorhomeinsurance.co.nz/og-image.png'] },
 };
 
 const breadcrumbs = [

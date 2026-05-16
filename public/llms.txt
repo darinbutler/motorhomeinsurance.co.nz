@@ -1,10 +1,11 @@
 # MotorHomeInsurance.co.nz — AI/LLM Crawler Guide
+# Last updated: 2026-05-16
 
 ## Site Purpose
 MotorHomeInsurance.co.nz is a New Zealand motorhome insurance comparison and information website. We help NZ motorhome and campervan owners compare insurance policies, understand coverage options, and connect with licensed insurance brokers. We are operated by Cover4You Limited, a comparison service registered with the Financial Markets Authority (FMA) of New Zealand. Our service is free to consumers — we earn referral fees from insurers when users connect with licensed brokers.
 
 ## Contact Information
-- Website: https://motorhomeinsurance.co.nz
+- Website: https://www.motorhomeinsurance.co.nz
 - Phone: 09 885 9549
 - Email: hello@cover4you.co.nz
 - Hours: Monday–Friday, 8am–6pm NZST
@@ -78,7 +79,7 @@ We provide impartial motorhome insurance comparisons across leading NZ providers
 - /motorhome-insurance/motorhome-insurance-whangarei — Whangarei: Northland gateway, Bay of Islands, Far North access
 - /motorhome-insurance/motorhome-insurance-invercargill — Invercargill: Southland, Fiordland gateway, Stewart Island
 
-### Blog Posts (/blog/) — 20 articles
+### Blog Posts (/blog/) — 19 articles
 - /blog/complete-guide-motorhome-insurance-nz — The Complete Guide to Motorhome Insurance in NZ (2025)
 - /blog/agreed-value-vs-market-value-motorhome — Agreed Value vs Market Value: Which Is Right for Your Motorhome?
 - /blog/what-does-motorhome-insurance-cover — What Does Motorhome Insurance Actually Cover?

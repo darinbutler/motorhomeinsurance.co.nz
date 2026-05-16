@@ -6,6 +6,9 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 export const metadata = {
   title: 'Motorhome Insurance Coverage Guide | MotorHomeInsurance.co.nz',
   description: 'Complete guide to motorhome insurance coverage in NZ. Understand what\'s covered, compare coverage levels, and find the right policy for your motorhome.',
+  alternates: { canonical: 'https://www.motorhomeinsurance.co.nz/coverage/' },
+  openGraph: { title: 'Motorhome Insurance Coverage Guide NZ', description: 'Complete guide to motorhome insurance coverage in NZ. Understand what\'s covered and find the right policy.', url: 'https://www.motorhomeinsurance.co.nz/coverage/', siteName: 'MotorHomeInsurance.co.nz', type: 'website', locale: 'en_NZ', images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }] },
+  twitter: { card: 'summary_large_image', title: 'Motorhome Insurance Coverage Guide NZ', description: 'Complete guide to motorhome insurance coverage types in New Zealand.', images: ['https://www.motorhomeinsurance.co.nz/og-image.png'] },
 };
 
 const whatsCovered = [

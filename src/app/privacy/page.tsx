@@ -3,6 +3,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Privacy Policy | MotorHomeInsurance.co.nz',
   description: 'Privacy Policy for MotorHomeInsurance.co.nz. Learn how we collect, use, and protect your personal information in accordance with the Privacy Act 2020.',
+  alternates: { canonical: 'https://www.motorhomeinsurance.co.nz/privacy/' },
+  openGraph: { title: 'Privacy Policy | MotorHomeInsurance.co.nz', description: 'Learn how we collect, use, and protect your personal information in accordance with the Privacy Act 2020.', url: 'https://www.motorhomeinsurance.co.nz/privacy/', siteName: 'MotorHomeInsurance.co.nz', type: 'website', locale: 'en_NZ', images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }] },
+  twitter: { card: 'summary_large_image', title: 'Privacy Policy | MotorHomeInsurance.co.nz', description: 'How we collect, use, and protect your personal information.', images: ['https://www.motorhomeinsurance.co.nz/og-image.png'] },
 };
 
 export default function PrivacyPage() {
@@ -12,7 +15,7 @@ export default function PrivacyPage() {
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1519001896312-85f41baa90a0?w=1920&h=600&fit=crop)',
+          backgroundImage: 'url(/hero-motorhome-4.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center 60%',
         }}

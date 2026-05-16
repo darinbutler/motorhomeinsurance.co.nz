@@ -564,6 +564,25 @@ export default async function CoverageTypePage({ params }: { params: Promise<{ s
       }
     : null;
 
+  const authorPerson = {
+    '@type': 'Person',
+    name: 'Sarah Mitchell',
+    jobTitle: 'Insurance Content Specialist',
+    url: 'https://www.motorhomeinsurance.co.nz/about/',
+    worksFor: { '@type': 'Organization', name: 'MotorHomeInsurance.co.nz', url: 'https://www.motorhomeinsurance.co.nz/' },
+  };
+
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: `${type.title} Motorhome Insurance`,
+    description: type.description,
+    url: `https://www.motorhomeinsurance.co.nz/types/${slug}/`,
+    isPartOf: { '@type': 'WebSite', url: 'https://www.motorhomeinsurance.co.nz/' },
+    author: authorPerson,
+    dateModified: '2026-05-16',
+  };
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -583,6 +602,7 @@ export default async function CoverageTypePage({ params }: { params: Promise<{ s
       {faqSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section

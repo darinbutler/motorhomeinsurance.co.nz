@@ -48,14 +48,34 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<import('next').Metadata> {
   const { slug } = await params;
   const page = insurancePages.find((p) => p.slug === slug);
-  if (!page) return;
+  if (!page) return {};
+
+  const title = `${page.title} | MotorHomeInsurance.co.nz`;
+  const description = page.metaDesc;
+  const url = `https://www.motorhomeinsurance.co.nz/motorhome-insurance/${slug}/`;
 
   return {
-    title: `${page.title} | MotorHomeInsurance.co.nz`,
-    description: page.metaDesc,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: 'MotorHomeInsurance.co.nz',
+      type: 'website',
+      locale: 'en_NZ',
+      images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['https://www.motorhomeinsurance.co.nz/og-image.png'],
+    },
   };
 }
 
@@ -722,10 +742,33 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
     }))
   };
 
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: page.title,
+    description: page.metaDesc,
+    url: `https://www.motorhomeinsurance.co.nz/motorhome-insurance/${slug}/`,
+    isPartOf: { '@type': 'WebSite', url: 'https://www.motorhomeinsurance.co.nz/' },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.motorhomeinsurance.co.nz/' },
+        { '@type': 'ListItem', position: 2, name: 'Motorhome Insurance', item: 'https://www.motorhomeinsurance.co.nz/motorhome-insurance/' },
+        { '@type': 'ListItem', position: 3, name: page.h1, item: `https://www.motorhomeinsurance.co.nz/motorhome-insurance/${slug}/` },
+      ],
+    },
+    author: {
+      '@type': 'Organization',
+      name: 'MotorHomeInsurance.co.nz',
+      url: 'https://www.motorhomeinsurance.co.nz/',
+    },
+  };
+
   return (
     <>
       <BreadcrumbSchema crumbs={breadcrumbs} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       {/* Hero Section */}
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"

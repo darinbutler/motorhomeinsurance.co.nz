@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 
+export const metadata = {
+  title: 'Quote Request Received | MotorHomeInsurance.co.nz',
+  description: 'Your motorhome insurance quote request has been received. A licensed NZ broker will contact you within 24 hours.',
+  robots: { index: false, follow: false },
+};
+
 export default function ThankYouPage() {
   return (
     <main className="min-h-[80vh] flex items-center py-20 px-4 sm:px-6 lg:px-8">

@@ -3,6 +3,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Disclaimer | MotorHomeInsurance.co.nz',
   description: 'Important legal disclaimer for MotorHomeInsurance.co.nz. Learn how our comparison service works, our regulatory position, and your obligations.',
+  alternates: { canonical: 'https://www.motorhomeinsurance.co.nz/disclaimer/' },
+  openGraph: { title: 'Disclaimer | MotorHomeInsurance.co.nz', description: 'Important legal disclaimer — how our comparison service works, our regulatory position, and your obligations.', url: 'https://www.motorhomeinsurance.co.nz/disclaimer/', siteName: 'MotorHomeInsurance.co.nz', type: 'website', locale: 'en_NZ', images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }] },
+  twitter: { card: 'summary_large_image', title: 'Disclaimer | MotorHomeInsurance.co.nz', description: 'Important legal disclaimer about how our comparison service works.', images: ['https://www.motorhomeinsurance.co.nz/og-image.png'] },
 };
 
 export default function DisclaimerPage() {
@@ -12,7 +15,7 @@ export default function DisclaimerPage() {
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1920&h=600&fit=crop)',
+          backgroundImage: 'url(/hero-motorhome-6.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

@@ -6,6 +6,9 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 export const metadata = {
   title: 'About MotorHomeInsurance.co.nz | NZ Motorhome Insurance',
   description: 'Learn about MotorHomeInsurance.co.nz. Connecting Kiwis with the right motorhome insurance through impartial quotes and trusted broker partnerships.',
+  alternates: { canonical: 'https://www.motorhomeinsurance.co.nz/about/' },
+  openGraph: { title: 'About MotorHomeInsurance.co.nz', description: 'Connecting Kiwis with the right motorhome insurance through impartial quotes and trusted broker partnerships.', url: 'https://www.motorhomeinsurance.co.nz/about/', siteName: 'MotorHomeInsurance.co.nz', type: 'website', locale: 'en_NZ', images: [{ url: 'https://www.motorhomeinsurance.co.nz/og-image.png', width: 1200, height: 630 }] },
+  twitter: { card: 'summary_large_image', title: 'About MotorHomeInsurance.co.nz', description: 'Connecting Kiwis with the right motorhome insurance through impartial quotes and trusted broker partnerships.', images: ['https://www.motorhomeinsurance.co.nz/og-image.png'] },
 };
 
 const breadcrumbs = [
