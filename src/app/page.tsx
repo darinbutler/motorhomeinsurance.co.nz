@@ -164,7 +164,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
               {/* Left: copy */}
-              <div className="lg:col-span-7">
+              <div className="lg:col-span-8">
                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
                   <Shield className="w-4 h-4 text-sky-400" />
                   <span className="text-sm text-white font-medium">Connect with Licensed Insurance Brokers</span>
@@ -197,8 +197,10 @@ export default function HomePage() {
               </div>
 
               {/* Right: quote form */}
-              <div className="lg:col-span-5">
-                <QuoteForm mode="compact" />
+              <div className="lg:col-span-4 flex justify-end">
+                <div className="w-full max-w-sm">
+                  <QuoteForm mode="compact" />
+                </div>
               </div>
 
             </div>
