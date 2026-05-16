@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Logo from './Logo';
 import { Shield, Zap, HeadphonesIcon, Lock, ExternalLink } from 'lucide-react';
 
 const footerTrustBadges = [
@@ -110,18 +109,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-6">
-          <div className="col-span-2 sm:col-span-2 lg:col-span-1">
-            <Logo variant="white" size="sm" />
-            <div className="mt-4 space-y-3">
-              <div>
-                <p className="text-xs text-slate-400 uppercase tracking-wide mb-1">Email</p>
-                <a href="mailto:hello@cover4you.co.nz" className="text-white font-semibold hover:text-sky-300 transition-colors break-all text-sm">
-                  hello@cover4you.co.nz
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
 
           <div>
             <h3 className="text-white font-bold mb-4">{footerLinks.company.title}</h3>
@@ -176,17 +164,10 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
 
-            <h3 className="text-white font-bold mb-4 mt-8">{footerLinks.legal.title}</h3>
-            <ul className="space-y-2">
-              {footerLinks.legal.links.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-slate-400 hover:text-sky-300 transition-colors text-sm">{link.label}</Link>
-                </li>
-              ))}
-            </ul>
-
-            <h3 className="text-white font-bold mb-4 mt-8">{footerLinks.regulatory.title}</h3>
+          <div>
+            <h3 className="text-white font-bold mb-4">{footerLinks.regulatory.title}</h3>
             <ul className="space-y-2">
               {footerLinks.regulatory.links.map((link) => (
                 <li key={link.href}>
@@ -198,16 +179,17 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
         </div>
       </div>
 
       <div className="border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h4 className="text-sm font-bold text-slate-300 uppercase tracking-wide mb-3">How This Site Works</h4>
-          <p className="text-xs text-slate-500 leading-relaxed max-w-4xl">
+          <p className="text-xs text-slate-500 leading-relaxed">
             MotorHomeInsurance.co.nz is a no-fee comparison and referral service operated by Cover4You. We are not an insurer, broker, or financial advice provider. When you submit a quote request, we connect you with licensed insurance brokers and advisers from our network who are regulated under the Financial Markets Conduct Act 2013 (FMCA) and hold Financial Advice Provider (FAP) licences issued by the Financial Markets Authority (FMA). Those brokers provide the personalised quotes and regulated advice — not us. All insurance products are issued by licensed New Zealand insurers. Information on this website is general in nature and does not constitute personal financial or insurance advice. You should seek independent advice tailored to your circumstances before making any insurance decision.
           </p>
-          <p className="text-xs text-slate-500 leading-relaxed max-w-4xl mt-3">
+          <p className="text-xs text-slate-500 leading-relaxed mt-3">
             <span className="text-slate-400 font-semibold">Commercial Relationships:</span> We may receive referral fees or commissions from the brokers, underwriters, and insurers featured on this website. These arrangements do not affect the price you pay for any product. Before featuring any provider, we personally vet each broker and insurer to confirm appropriate licensing, good standing with the FMA and ICNZ, and compliance with our standards for claims handling and customer service. Our editorial content reflects our honest, independent assessment. See our full <Link href="/disclaimer" className="text-slate-400 hover:text-sky-300 transition-colors underline">Disclaimer</Link> for details.
           </p>
         </div>
