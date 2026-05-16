@@ -41,7 +41,7 @@ export default function HeroCarousel() {
           style={{
             backgroundImage: `url(${image.url})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center 60%',
             opacity: currentSlide === index ? 1 : 0,
           }}
           aria-hidden={currentSlide !== index}

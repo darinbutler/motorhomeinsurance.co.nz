@@ -158,7 +158,7 @@ export default function HomePage() {
       <main>
 
         {/* ── HERO ────────────────────────────────────────────── */}
-        <section className="relative min-h-[90vh] lg:min-h-[100vh] flex items-center overflow-hidden">
+        <section className="relative min-h-screen lg:min-h-[110vh] flex items-center overflow-hidden">
           <HeroCarousel />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-28 pb-16 lg:pt-0 lg:pb-0">
             <div className="max-w-3xl">
