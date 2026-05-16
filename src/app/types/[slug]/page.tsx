@@ -12,6 +12,8 @@ const unsplashImages: Record<string, string> = {
   'market-value': 'photo-1592351763700-b9b35a6465ea',
   'contents-cover': 'photo-1635787501769-10b8e23b3ded',
   'rental-excess-reduction': 'photo-1523987355523-c7b5b0dd90a7',
+  'roadside-assistance': 'photo-1523987355523-c7b5b0dd90a7',
+  'storage-cover': 'photo-1626680114529-3f6ffa002b80',
 };
 
 export async function generateStaticParams() {
@@ -272,6 +274,78 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
         <h3 className="text-2xl font-bold text-slate-900 mb-4">Top Rental Companies and Their Excess Policies</h3>
         <p className="text-slate-700 mb-4 leading-relaxed">
           Major motorhome rental companies include Britz, Maui, Hippie Campers, and Apollo. Most include standard excess of $2,000-3,000 in their rental rate. Excess reduction is offered as optional add-on daily charge. Compare excess reduction costs across rental companies — some offer it cheaper or better coverage than others. Budget excess reduction into your rental motorhome costs upfront.
+        </p>
+      </div>
+    </>
+  },
+  'roadside-assistance': {
+    features: [
+      '24/7 emergency breakdown response throughout New Zealand',
+      'Towing to the nearest suitable motorhome repairer',
+      'Specialist motorhome-scale recovery vehicles',
+      'Emergency fuel delivery',
+      'Lockout assistance',
+      'On-road minor mechanical assistance',
+      'Coverage in remote areas including Fiordland, Far North, and Catlins',
+      'Emergency accommodation support (some providers)',
+    ],
+    whoIsItFor: 'All motorhome owners — but especially those who tour remote areas of New Zealand, use their motorhome for extended trips, or live in their motorhome full-time. When your motorhome breaks down far from home, roadside assistance is not a luxury but a necessity.',
+    expandedSection: <>
+      <div className="mb-8">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">Why Standard Car Roadside Assistance Isn&apos;t Enough</h3>
+        <p className="text-slate-700 mb-4 leading-relaxed">
+          Standard car roadside assistance services are designed for passenger vehicles. Motorhome recovery requires different equipment — larger tow trucks, wider-load knowledge, and understanding of habitation systems. Specialist motorhome roadside assistance providers know this and deploy appropriate resources. Covi Wings and NZRA (included with Star Insure CamperCare) are designed specifically for RV recovery.
+        </p>
+      </div>
+      <div className="mb-8">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">Comparing Your Options: Wings, NZRA, and AA</h3>
+        <p className="text-slate-700 mb-4 leading-relaxed">
+          <strong>Covi Wings:</strong> Available as an add-on with Covi Insurance from $57/year. Specifically designed for motorhomes and caravans. $200 callout fee applies. Best for Covi policyholders who want dedicated RV roadside support.
+        </p>
+        <p className="text-slate-700 mb-4 leading-relaxed">
+          <strong>NZRA (with Star Insure CamperCare):</strong> Included at no extra cost in Star&apos;s CamperCare premium. 24/7 response, nationwide coverage, no callout fee. Best value for Star policyholders.
+        </p>
+        <p className="text-slate-700 leading-relaxed">
+          <strong>AA Roadside:</strong> Included with AA Insurance motorhome policies. AA&apos;s nationwide network is comprehensive and reliable. Best for AA Insurance policyholders who value brand recognition and wide coverage.
+        </p>
+      </div>
+      <div className="mb-8">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">What to Do When You Break Down</h3>
+        <p className="text-slate-700 leading-relaxed">
+          Move to a safe location, activate hazard lights, and call your roadside assistance provider with your policy number, location, and vehicle description. In remote areas, use your phone&apos;s GPS to get coordinates. Response times in remote areas (Fiordland, Far North) can be 2-4 hours — carry water, food, and a blanket as standard preparation. If anyone is injured, call 111 first.
+        </p>
+      </div>
+    </>
+  },
+  'storage-cover': {
+    features: [
+      'Theft protection during off-season storage periods',
+      'Fire and explosion cover while motorhome is stationary',
+      'Storm, hail, and weather damage protection',
+      'Vandalism and malicious damage cover',
+      'Typically 30-50% less than full comprehensive premium',
+      'Applies at home, storage facilities, or motorhome parks',
+      'Available for periods from 1 month to 6 months+',
+      'Can be activated and deactivated as needed each season',
+    ],
+    whoIsItFor: 'Motorhome owners who use their vehicle seasonally — typically October-April for summer touring and May-September in storage. Also ideal for owners travelling overseas for extended periods, motorhomes awaiting sale or repair, or any situation where the motorhome will not be driven for 4+ weeks.',
+    expandedSection: <>
+      <div className="mb-8">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">The True Risks of Stored Motorhomes</h3>
+        <p className="text-slate-700 mb-4 leading-relaxed">
+          A motorhome sitting in storage is not risk-free. Break-ins at home properties and storage facilities are common — motorhomes are high-value, visible targets. LPG and electrical systems present fire risk even when stationary. Storm damage to exposed motorhomes can cause thousands in repair costs. Rodent damage to wiring and upholstery is a genuine storage risk in many NZ regions. Cancelling insurance during storage creates a gap that one incident can make catastrophically expensive.
+        </p>
+      </div>
+      <div className="mb-8">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">How to Activate Lay-Up Cover</h3>
+        <p className="text-slate-700 mb-4 leading-relaxed">
+          Contact your insurer before your storage period begins — not after. Request lay-up or storage-period cover explicitly and get written confirmation. Most specialist insurers (Covi, Star Insure) process this within 24-48 hours. When recommencing touring in spring, reinstate full comprehensive cover before taking the motorhome on the road. Never drive on lay-up cover — the driving component is removed and you would be uninsured for any road incident.
+        </p>
+      </div>
+      <div className="mb-8">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">Home vs Facility Storage — Insurance Implications</h3>
+        <p className="text-slate-700 leading-relaxed">
+          Dedicated storage facilities with 24/7 CCTV, gated access, and security patrols represent lower risk than home driveway storage. Some insurers offer 5-15% discounts for approved facility storage. Home garage storage is intermediate. Wherever you store, tell your insurer the accurate location — incorrect information can complicate claims. Secure storage is also good practice beyond insurance: GPS trackers, wheel clamps, and motion-activated lighting are worthwhile investments regardless of cover level.
         </p>
       </div>
     </>

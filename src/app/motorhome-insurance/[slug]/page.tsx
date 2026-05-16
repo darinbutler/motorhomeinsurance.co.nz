@@ -411,6 +411,222 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
       { text: 'Best Motorhome Insurance', href: '/motorhome-insurance/best-motorhome-insurance-nz' },
     ],
     faqSlice: [5, 12]
+  },
+  'motorhome-insurance-tauranga': {
+    intro: 'Tauranga is New Zealand\'s fastest-growing city and the Bay of Plenty\'s commercial hub — home to a thriving motorhome community with easy access to Coromandel Peninsula, Rotorua, and the Eastern Bay of Plenty. Motorhome insurance in Tauranga reflects the region\'s mix of urban storage challenges and year-round adventure touring opportunities.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Tauranga & Bay of Plenty Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Bay of Plenty Touring Base:</strong> Tauranga is a superb base for Bay of Plenty touring — Whakatāne, Ōhope Beach, Cape Runaway, and the Coromandel are all within easy reach. Standard comprehensive motorhome insurance covers travel throughout the region. Ensure your roadside assistance covers remote Eastern Bay of Plenty roads where response times may be longer.</p>
+        <p><strong>Urban Storage in Tauranga:</strong> As a fast-growing city, Tauranga has increasing urban density and limited secure motorhome storage. Street parking in residential areas is common but carries higher theft risk. GPS tracking devices can reduce premiums 5-15% and are strongly recommended for Tauranga-stored motorhomes. Dedicated storage facilities in Tauranga East and Greerton offer monitored options.</p>
+        <p><strong>Climate and Weather Cover:</strong> Bay of Plenty enjoys warm summers but can experience significant rainfall year-round. Ensure your policy covers weather-related water ingress and storm damage. Comprehensive policies cover hail damage — a consideration during Bay of Plenty summer thunderstorms. Check that your motorhome's roof seals are maintained; insurers may decline water ingress claims attributed to poor maintenance.</p>
+        <p><strong>Coastal Motorhome Use:</strong> Many Tauranga motorhome owners use their vehicles at coastal locations including Mount Maunganui, Papamoa Beach, and Ōhope. Coastal salt exposure accelerates corrosion on motorhome components. Wash your motorhome regularly after coastal stays and ensure your insurer is informed of regular coastal use, which may be relevant to long-term maintenance-related claims.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Rotorua', href: '/motorhome-insurance/motorhome-insurance-rotorua' },
+      { text: 'Compare Providers', href: '/compare' },
+      { text: 'Coverage Guide', href: '/coverage' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-palmerston-north': {
+    intro: 'Palmerston North sits at the heart of the lower North Island, making it an ideal base for motorhome owners exploring Manawatū, Whanganui, Rangitīkei, and the Ruahine and Tararua ranges. Motorhome insurance in Palmerston North provides protection tailored to central NZ touring, including river valley routes, national park access, and coastal day trips.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Palmerston North & Manawatū Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Central North Island Touring:</strong> Palmerston North owners are within easy reach of Whanganui National Park, Tongariro National Park (via the Desert Road), Hawke\'s Bay, and the Kapiti Coast. Standard comprehensive motorhome insurance covers travel throughout the North Island. Ruahine and Tararua road access can be challenging — ensure mechanical fitness before mountain touring.</p>
+        <p><strong>Rural and Regional Roads:</strong> The Manawatū-Whanganui region includes some of New Zealand\'s most scenic but challenging rural roads. The Manawatū Gorge area, Pahīatua Track, and river valley routes require careful driving. Comprehensive cover with good roadside assistance is essential for remote rural touring from a Palmerston North base.</p>
+        <p><strong>Storage in Palmerston North:</strong> Palmerston North has good motorhome storage facilities and residential properties often have garage or driveway storage. The city has moderate theft risk — lower than Auckland or Wellington but still worth addressing with security devices. GPS trackers and alarm systems are worthwhile investments regardless of where you store your motorhome.</p>
+        <p><strong>Multi-Policy Bundling Opportunity:</strong> Palmerston North is a family city with high rates of home ownership. If you have home and contents insurance alongside your motorhome policy, bundling with a single insurer (AMI and AA both have strong regional presence) can save 10-15% across all policies. Ask about multi-policy discounts when comparing motorhome insurance quotes.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Wellington', href: '/motorhome-insurance/motorhome-insurance-wellington' },
+      { text: 'Motorhome Insurance Napier', href: '/motorhome-insurance/motorhome-insurance-napier' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-nelson': {
+    intro: 'Nelson is one of New Zealand\'s sunniest cities and a premier motorhome destination — gateway to Abel Tasman National Park, the Marlborough Sounds, and the Kahurangi wilderness. Motorhome insurance in Nelson covers the unique combination of leisure use, coastal freedom camping, and Golden Bay adventures that Nelson-based owners typically pursue.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Nelson & Top of the South Island Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Abel Tasman and Golden Bay Touring:</strong> Nelson-based motorhome owners enjoy world-class access to Abel Tasman National Park, Farewell Spit, and the Heaphy Track trailhead. Golden Bay roads — particularly the descent to Collingwood and beyond — are winding and challenging. Comprehensive cover with quality roadside assistance is essential for remote Golden Bay exploration where response times can be 2+ hours.</p>
+        <p><strong>Freedom Camping in the Nelson Region:</strong> Nelson Tasman District Council maintains several freedom camping areas, but rules have evolved in recent years. Ensure your motorhome has current WSC certification before freedom camping. Check the Camping Check app for current Nelson Tasman freedom camping site status — seasonal restrictions apply at popular coastal spots during peak summer.</p>
+        <p><strong>Coastal and Marine Environment:</strong> Nelson\'s coastal location means salt-laden air, particularly around Tasman Bay, Mapua, and the outer Marlborough Sounds. Regular motorhome washing after coastal tours helps prevent corrosion. Salt-related damage from poor maintenance may not be covered under comprehensive policies — regular care protects both your motorhome and your claim eligibility.</p>
+        <p><strong>Nelson Storage Options:</strong> Nelson has good motorhome storage options including dedicated facilities in Richmond and Stoke. The Nelson-Richmond area has moderate theft risk. Many Nelson residents have good off-road home storage capacity. Secure off-road storage typically attracts lower premiums than street parking — mention your storage arrangements when getting quotes.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Freedom Camping Insurance', href: '/motorhome-insurance/freedom-camping-insurance-nz' },
+      { text: 'Motorhome Insurance Christchurch', href: '/motorhome-insurance/motorhome-insurance-christchurch' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-rotorua': {
+    intro: 'Rotorua is New Zealand\'s geothermal heart and one of the country\'s most visited tourism destinations — making it a natural base for motorhome owners exploring central North Island. From the Waikato River to the Volcanic Plateau, Rotorua-based motorhome insurance should cover the unique touring patterns and regional conditions of this remarkable area.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Rotorua & Central North Island Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Geothermal Environment Considerations:</strong> Rotorua\'s geothermal environment means hydrogen sulphide in the air, which can accelerate corrosion on metal surfaces. Regular maintenance and washing are essential for motorhomes stored or frequently used in the Rotorua district. While insurers cover accidental damage from external causes, damage from poor maintenance or gradual corrosion is typically excluded — maintain your motorhome diligently in this environment.</p>
+        <p><strong>Tourism Hub and Theft Risk:</strong> Rotorua\'s high tourism traffic creates elevated theft risk for motorhomes at popular sites including Whakarewarewa, Te Puia, and government gardens. Never leave valuables visible in your motorhome. Use secure parking where available. GPS tracking is particularly valuable in high-visitor areas. Your insurer covers theft, but prevention is always preferable.</p>
+        <p><strong>Volcanic Plateau Touring:</strong> Rotorua is the gateway to Tongariro National Park, Taupō, and the Volcanic Plateau. State Highway 5 (Rotorua-Taupō) and the Desert Road (SH1 through Tongariro) are popular touring routes. Seasonal closures of Desert Road during winter snow affect planning. Comprehensive cover with quality roadside assistance is essential for Plateau touring.</p>
+        <p><strong>Lake and Forest Access:</strong> The Rotorua Lakes district offers exceptional motorhome touring — Lakes Rotorua, Rotoiti, Tarawera, and the Whirinaki Te Pua-a-Tāne Conservation Park provide stunning camping. Forestry roads require care — check your policy covers off-seal driving, as some policies restrict cover on unpaved roads. Specialist motorhome policies from Covi and Star typically have broader geographic coverage than mainstream car-based policies.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Tauranga', href: '/motorhome-insurance/motorhome-insurance-tauranga' },
+      { text: 'Motorhome Insurance Hamilton', href: '/motorhome-insurance/motorhome-insurance-hamilton' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-napier': {
+    intro: 'Napier is the Art Deco capital of New Zealand and the commercial heart of Hawke\'s Bay — a sun-drenched region popular with motorhome owners for its wineries, beaches, and Cape Kidnappers gannet colony. Motorhome insurance in Napier and Hawke\'s Bay reflects the region\'s touring appeal and warm, largely benign climate.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Napier & Hawke\'s Bay Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Hawke\'s Bay Touring Routes:</strong> Napier-based motorhome owners enjoy excellent touring across Hawke\'s Bay — the Hawke\'s Bay Wine Country, Cape Kidnappers, Wairoa and the Mahia Peninsula, and the Hawke\'s Bay coastal walkway. Standard comprehensive motorhome insurance covers travel throughout the region. The Napier-Taupō Highway (SH5) provides access to the central North Island for extended touring.</p>
+        <p><strong>Mediterranean Climate Benefits:</strong> Hawke\'s Bay\'s warm, dry climate is kind to motorhomes — less moisture means lower risk of water ingress and mould compared to wetter regions. This generally translates to well-maintained motorhome fleets and lower weather-related claim frequency. However, summer hail storms in the region can cause significant damage — ensure your comprehensive policy covers hail.</p>
+        <p><strong>Freedom Camping on the East Coast:</strong> Hawke\'s Bay and Gisborne regions offer excellent freedom camping opportunities along the east coast. Napier City Council and Hastings District Council both maintain freedom camping areas — check Camping Check for current designations. Ensure your motorhome has valid WSC certification before freedom camping at self-contained-only sites along the East Cape route.</p>
+        <p><strong>Napier Storage Conditions:</strong> Napier\'s coastal location means salt air is a consideration for motorhome storage and maintenance. Properties in central Napier and Marine Parade environs have elevated salt exposure. Regular washing and marine-grade protection for metal components helps. Discuss your storage location with your insurer — coastal proximity may affect some policy terms and premium calculations.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Palmerston North', href: '/motorhome-insurance/motorhome-insurance-palmerston-north' },
+      { text: 'Freedom Camping Insurance', href: '/motorhome-insurance/freedom-camping-insurance-nz' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-new-plymouth': {
+    intro: 'New Plymouth is Taranaki\'s vibrant coastal city, dominated by the iconic cone of Mt Taranaki and surrounded by Surf Highway 45\'s black-sand beaches. Motorhome insurance in New Plymouth reflects the region\'s mix of mountain adventure, coastal touring, and the Taranaki Ring Road\'s spectacular circumnavigation of the maunga.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">New Plymouth & Taranaki Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Mt Taranaki and Egmont National Park:</strong> Mt Taranaki (2,518m) dominates Taranaki and provides spectacular motorhome touring via the Taranaki Ring Road. Access roads to Egmont National Park\'s three visitor centres (North Egmont, Dawson Falls, East Egmont) are sealed but steep in places. Comprehensive motorhome insurance covers mountain road incidents. Ensure your motorhome is mechanically fit before mountain touring — breakdowns on steep access roads are challenging recovery situations.</p>
+        <p><strong>Surf Highway 45 Touring:</strong> The Surf Highway (SH45) runs 105km along Taranaki\'s black-sand coastline through Oakura, Ōpunakē, and Hāwera. This is spectacular motorhome country with a range of camping options. Coastal salt exposure is significant on the Taranaki coast — regular motorhome washing after Surf Highway touring is important for long-term maintenance.</p>
+        <p><strong>Taranaki Weather Patterns:</strong> Mt Taranaki creates its own weather — rapid weather changes are common, particularly on the upper mountain and western flanks. Comprehensive motorhome insurance covers weather-related damage. Motorhomes parked in exposed coastal or mountain locations during storms should be positioned appropriately. Check weather forecasts before parking in exposed locations during westerly or northwesterly fronts.</p>
+        <p><strong>New Plymouth Storage:</strong> New Plymouth has good motorhome storage options, with most residential properties having adequate off-road parking. The city has moderate theft risk. New Plymouth\'s arts and culture scene (Govett-Brewster, Pukekura Park) makes it an excellent base for motorhome owners who want city amenities alongside adventure touring. Discuss your storage arrangements and usage patterns with your insurer for the most accurate premium.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Hamilton', href: '/motorhome-insurance/motorhome-insurance-hamilton' },
+      { text: 'Motorhome Insurance Palmerston North', href: '/motorhome-insurance/motorhome-insurance-palmerston-north' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-whangarei': {
+    intro: 'Whangārei is Northland\'s only city and the gateway to the Far North — home to beautiful harbours, the Poor Knights Islands Marine Reserve, and the winding roads leading to the Bay of Islands and Cape Reinga. Motorhome insurance in Whangārei covers both city-based storage risks and the spectacular Northland touring circuits that make this region one of NZ\'s most popular motorhome destinations.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Whangārei & Northland Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Northland Touring — Bay of Islands and Beyond:</strong> Whangārei-based motorhome owners have incredible touring within reach: the Bay of Islands (Paihia, Russell, Kerikeri), the Hokianga Harbour, Ninety Mile Beach, and Cape Reinga. These are quintessential New Zealand motorhome routes. Ninety Mile Beach driving requires care — beach driving carries risks not covered by standard motorhome insurance (sand vehicle damage, tide-related incidents). Stick to sealed roads and designated access points.</p>
+        <p><strong>Subtropical Climate and Motorhome Maintenance:</strong> Northland\'s warm, humid subtropical climate is beautiful for touring but challenging for motorhome maintenance. High humidity accelerates mould inside motorhomes, particularly in habitation spaces. Ensure adequate ventilation when parked. Corrosion on metal components is a concern — particularly for motorhomes stored near Whangārei\'s harbour. Regular washing and protective coating of metal components reduces long-term maintenance claims risk.</p>
+        <p><strong>Freedom Camping in Northland:</strong> Northland has excellent freedom camping opportunities, from DOC sites along the Kauri Coast to Northland Regional Council designated areas. Whangarei District Council\'s freedom camping areas include Marsden Cove and Langs Beach environs. Always check current designations on the Camping Check app — Northland camping rules have evolved in response to increased freedom camping pressure on the region\'s infrastructure.</p>
+        <p><strong>Whangārei Urban Insurance Considerations:</strong> As Northland\'s urban centre, Whangārei has moderate theft risk — higher than rural Northland but lower than Auckland. The city\'s growing population and tourism traffic create typical urban motorhome storage challenges. Dedicated storage facilities operate in the city. GPS tracking and alarm systems are worthwhile investments for motorhomes stored in Whangārei, particularly near the town basin area.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Auckland', href: '/motorhome-insurance/motorhome-insurance-auckland' },
+      { text: 'Freedom Camping Insurance', href: '/motorhome-insurance/freedom-camping-insurance-nz' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-invercargill': {
+    intro: 'Invercargill is Southland\'s capital and the southernmost city in New Zealand — the gateway to Fiordland, Stewart Island/Rakiura, and the Central Otago wine country. Motorhome insurance in Invercargill reflects the region\'s spectacular but challenging touring environment, including Fiordland\'s remote roads, Stewart Island ferry crossings, and the Southland\'s demanding winter conditions.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Invercargill & Southland Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Fiordland Gateway:</strong> Invercargill is the natural base for Fiordland touring — Milford Sound, Doubtful Sound, and Te Anau are all accessible for day or overnight motorhome trips. The Milford Road (SH94) is one of NZ\'s most spectacular but demanding drives — narrow sections, avalanche risk in winter, and changeable weather. Comprehensive motorhome insurance with quality roadside assistance is essential for Fiordland touring. Response times to remote Fiordland locations can be 3-4 hours.</p>
+        <p><strong>Stewart Island/Rakiura Access:</strong> Stewart Island ferry crossings and the island\'s limited road network create specific considerations. Motorhome transport to Stewart Island is limited and generally impractical. However, Invercargill-based motorhome owners often use their vehicles for the Southland and Catlins Coast touring that frames a Stewart Island visit. Catlins roads include unsealed sections — check your policy covers travel on unsealed roads.</p>
+        <p><strong>Southland Winter Conditions:</strong> Invercargill experiences New Zealand\'s most consistent winter frost and snow risk. Black ice on roads, particularly on elevated sections of the Milford Road and Central Otago access routes, requires winter driving awareness. Comprehensive motorhome insurance covers weather-related accidents. Ensure your motorhome has appropriate winter tyres or chains if you plan winter touring in elevated Southland areas.</p>
+        <p><strong>Invercargill Storage Advantages:</strong> As a smaller city, Invercargill typically has lower theft risk than Auckland, Wellington, or Christchurch. Many Invercargill properties have good off-road motorhome storage capacity — a genuine advantage for premium calculations. Secure home storage often attracts lower premiums than urban street parking. Discuss your storage location and touring patterns with your insurer to ensure your premium accurately reflects your lower-risk Southland profile.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Queenstown', href: '/motorhome-insurance/motorhome-insurance-queenstown' },
+      { text: 'Motorhome Insurance Dunedin', href: '/motorhome-insurance/motorhome-insurance-dunedin' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-storage-insurance-nz': {
+    intro: 'Motorhome storage insurance protects your RV when it\'s not in active use — whether during winter lay-up, extended travel overseas, or while your motorhome awaits a sale or repair. Many owners underestimate the risks a stored motorhome faces: theft, fire, vandalism, water damage, and pest damage can all occur while your vehicle is stationary. Storage-period cover keeps you protected at a reduced premium.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Motorhome Storage Insurance — What You Need to Know</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Why Storage Insurance Matters:</strong> A motorhome in storage is not a zero-risk asset. Theft from storage facilities and home properties is common — motorhomes are high-value targets. Fire risk remains from LPG systems and electrical components. Water ingress from failed roof seals, blocked drainage, or storm damage can cause $5,000-$20,000 in mould and structural damage. Rodent damage to wiring harnesses is another storage-period risk. Cancelling insurance during storage to save money is false economy.</p>
+        <p><strong>Laid-Up Cover — The Smart Storage Solution:</strong> Most specialist motorhome insurers offer a "laid-up" or "storage period" policy option. This removes the driving and accident component (since the motorhome won\'t be on the road) while retaining fire, theft, weather, and vandalism protection. Laid-up cover typically costs 30-50% less than full comprehensive cover. Activating laid-up cover requires notifying your insurer before the storage period begins — you can\'t apply it retrospectively.</p>
+        <p><strong>Storage Facility vs Home Storage for Insurance:</strong> Where you store your motorhome during lay-up affects your premium. Dedicated motorhome storage facilities with 24/7 CCTV, gated access, and security patrols represent lower risk than home driveway storage. Some insurers offer 5-15% premium discounts for approved storage facilities. Home garage storage is intermediate — more secure than street parking but less monitored than a facility. Discuss your storage location with your insurer and ensure it\'s accurately noted on your policy.</p>
+        <p><strong>Preparing for Storage — Insurance Implications:</strong> Proper pre-storage preparation is not just good practice — it affects your claim eligibility. Drain and dry water tanks to prevent mould and bacterial growth. Service the LPG system and ensure all gas connections are secure. Disconnect the leisure battery. Seal all ventilation points against vermin. Document the motorhome\'s condition with date-stamped photographs before storage commences. If a claim arises during storage, this documentation establishes the pre-storage condition and supports your claim.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Seasonal Motorhome Insurance', href: '/motorhome-insurance/seasonal-motorhome-insurance-nz' },
+      { text: 'Coverage Types', href: '/coverage' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [0, 5]
+  },
+  'seasonal-motorhome-insurance-nz': {
+    intro: 'Seasonal motorhome insurance allows owners who use their motorhome only part of the year to reduce premiums during off-season periods while maintaining essential protection. New Zealand\'s climate and motorhome culture mean many owners travel heavily October-April and store their vehicles through winter. Seasonal or lay-up policies are the smart way to manage this cycle cost-effectively.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Seasonal Motorhome Cover — How It Works</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>The Seasonal Use Pattern in NZ:</strong> New Zealand\'s motorhome season broadly runs from late October through to early May, aligned with school holidays, summer festivals, and the best freedom camping weather. Many owners travel intensively during this period then store their motorhomes through the cooler months (May-September). This six-month active and six-month inactive pattern creates a natural opportunity for seasonal insurance structuring.</p>
+        <p><strong>How Seasonal Cover Reduces Costs:</strong> During active touring periods, you maintain full comprehensive cover including driving, accident, theft, and weather protection. During lay-up periods, you switch to storage-only cover — removing the driving component and reducing premiums by 30-50%. Over a full year, this can save $150-$400 depending on your motorhome\'s value and coverage. The key is proactively notifying your insurer when you\'re transitioning between active and lay-up periods.</p>
+        <p><strong>Transitioning Between Active and Lay-Up Cover:</strong> Switching between full and lay-up cover requires formal notification to your insurer — typically a phone call or online request. Most insurers process the change within 24-48 hours. Do not assume you\'re on lay-up cover just because you\'ve parked up for the winter — you must request the change. Similarly, when recommencing touring in spring, switch back to full comprehensive cover before taking the motorhome on the road.</p>
+        <p><strong>What Seasonal Cover Includes and Excludes:</strong> During lay-up periods, seasonal cover typically includes: theft (including forced entry and conversion theft), fire and explosion, weather and storm damage, vandalism and malicious damage, and liability for injury occurring on or near the motorhome. It excludes: accidental damage from driving, collision damage, and incidents occurring while the motorhome is being driven. If you need to move the motorhome during lay-up (e.g., to a storage facility), ensure you reinstate full cover for the duration of the drive.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Storage Insurance', href: '/motorhome-insurance/motorhome-storage-insurance-nz' },
+      { text: 'Motorhome Insurance Cost', href: '/motorhome-insurance/motorhome-insurance-cost-nz' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [0, 5]
+  },
+  'full-time-motorhome-insurance-nz': {
+    intro: 'Full-time motorhome insurance is a specialist product for Kiwis who live permanently in their motorhome. Standard recreational motorhome policies are underwritten for part-time use — if you live in your motorhome year-round, you need a policy that reflects your actual lifestyle. Full-time living changes your risk profile, contents requirements, and liability exposure in ways standard policies may not adequately cover.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Full-Time Motorhome Insurance Essentials</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Why Standard Policies Fall Short for Full-Timers:</strong> Standard recreational motorhome insurance is designed for vehicles used for holidays and weekends, not full-time residence. Policies may contain clauses excluding "residential use" or "permanent habitation." Usage patterns for full-time living — many more kilometres driven annually, more time at freedom camping sites, greater wear on habitation systems — are materially different from recreational use. Failing to disclose full-time use is a misrepresentation that can invalidate your policy entirely.</p>
+        <p><strong>Contents Requirements for Full-Time Living:</strong> When your motorhome is your only home, the contents are everything you own. Clothing, electronics, kitchen equipment, tools, bedding, entertainment systems, work equipment — the replacement cost of a full-timer\'s contents often exceeds $20,000-$30,000. Standard policies with $3,000-$10,000 contents limits are grossly inadequate for full-time living. You need contents cover that reflects the reality of your belongings.</p>
+        <p><strong>Finding the Right Full-Timer Policy:</strong> Covi Insurance has experience with full-time living scenarios and can structure policies appropriately. Star Insure\'s CamperCare can be adapted for full-time use. The key is honest, open communication with your broker about your actual usage. Our brokers specialise in finding insurers who understand full-time motorhome living and can structure cover that genuinely protects your lifestyle — not a standard recreational policy that leaves you exposed.</p>
+        <p><strong>Practical Requirements for Full-Time Living:</strong> Full-time motorhome living in New Zealand requires a valid WSC certificate for freedom camping (essential when you have no home base for commercial campground stays), a permanent address registered elsewhere for driver licensing and electoral roll purposes, robust roadside assistance membership (a breakdown is a genuine emergency — you have no other home), and regular motorhome servicing to maintain both mechanical reliability and insurance policy compliance. Our brokers can advise on the complete picture of full-time motorhome insurance requirements.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Self-Contained Motorhome Insurance', href: '/motorhome-insurance/self-contained-motorhome-insurance-nz' },
+      { text: 'Freedom Camping Insurance', href: '/motorhome-insurance/freedom-camping-insurance-nz' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-over-65-nz': {
+    intro: 'Motorhome ownership is hugely popular among New Zealand\'s retired and semi-retired community — the freedom of the open road, NZMCA membership, freedom camping, and extended touring align perfectly with retirement lifestyle. Motorhome insurance for over 65s has some specific considerations including age-related excess, policy conditions, and the particular value of agreed value cover for retirees on fixed incomes.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Motorhome Insurance for Retired and Senior Owners</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Age-Related Excess — What to Expect:</strong> Some insurers apply an age-related excess loading for primary drivers over 70 or 75, typically an additional $250-$500 on top of the standard excess. This reflects actuarial data about claims frequency in older age groups. Not all insurers apply age loadings at the same age threshold — Covi Insurance, as a specialist motorhome insurer, has more experience structuring policies for older motorhome owners and may offer more favourable terms than mainstream providers. Shop around specifically asking about any age-related excess loading.</p>
+        <p><strong>Agreed Value — Essential for Retirees:</strong> For retirees on fixed incomes, the certainty of agreed value motorhome insurance is particularly valuable. Knowing exactly what you\'ll receive if your motorhome is written off allows for proper retirement financial planning. Market value insurance\'s uncertainty — where payout depends on depreciation and market conditions at the time of claim — is a financial risk that retirees are generally better positioned to avoid. Choose agreed value, particularly for motorhomes worth $50,000 or more.</p>
+        <p><strong>NZMCA Membership — The Retiree\'s Motorhome Community:</strong> NZMCA membership is disproportionately popular with retired motorhome owners, and for good reason — member parks offer affordable accommodation, the community provides social connection, and the advocacy work protects freedom camping access that retirees use heavily. NZMCA membership, combined with Covi Insurance (NZMCA\'s endorsed insurer), represents a strong foundation for retired motorhome owners\' insurance and lifestyle needs.</p>
+        <p><strong>Medical and Travel Considerations:</strong> Motorhome insurance covers the vehicle but not medical costs if you\'re injured in an incident. New Zealand\'s ACC scheme covers accident-related injuries for NZ residents, regardless of age or fault. However, if you travel internationally in your motorhome (unlikely but some owners do) or undertake activities beyond standard motorhome touring, ensure appropriate travel or personal accident cover supplements your motorhome policy. Our brokers can advise on the complete insurance picture for retired motorhome owners.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'NZMCA Insurance Guide', href: '/motorhome-insurance/nzmca-insurance-nz' },
+      { text: 'Agreed Value Coverage', href: '/types/agreed-value' },
+      { text: 'Compare Providers', href: '/compare' },
+    ],
+    faqSlice: [5, 12]
   }
 };
 

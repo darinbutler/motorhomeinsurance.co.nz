@@ -21,6 +21,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${post.title} | MotorHomeInsurance.co.nz`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://motorhomeinsurance.co.nz/blog/${slug}`,
+    },
+    openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.excerpt,
+      url: `https://motorhomeinsurance.co.nz/blog/${slug}`,
+      images: [{ url: post.image, width: 800, height: 450, alt: post.title }],
+      publishedTime: post.date,
+      authors: ['https://motorhomeinsurance.co.nz/about'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
   };
 }
 
@@ -38,17 +56,31 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     { name: post.title, url: `https://motorhomeinsurance.co.nz/blog/${slug}` }
   ];
 
+  const authorPerson = {
+    '@type': 'Person',
+    name: 'Sarah Mitchell',
+    jobTitle: 'Insurance Content Specialist',
+    worksFor: {
+      '@type': 'Organization',
+      name: 'MotorHomeInsurance.co.nz',
+      url: 'https://motorhomeinsurance.co.nz',
+    },
+    url: 'https://motorhomeinsurance.co.nz/about',
+  };
+
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: post.title,
-    image: post.image,
+    image: {
+      '@type': 'ImageObject',
+      url: post.image,
+      width: 800,
+      height: 450,
+    },
     datePublished: post.date,
     dateModified: post.date,
-    author: {
-      '@type': 'Organization',
-      name: post.author,
-    },
+    author: authorPerson,
     publisher: {
       '@type': 'Organization',
       name: 'MotorHomeInsurance.co.nz',
@@ -56,15 +88,49 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         '@type': 'ImageObject',
         url: 'https://motorhomeinsurance.co.nz/logo.png',
       },
+      url: 'https://motorhomeinsurance.co.nz',
     },
     description: post.excerpt,
+    url: `https://motorhomeinsurance.co.nz/blog/${post.slug}`,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://motorhomeinsurance.co.nz/blog/${post.slug}`,
+    },
+    articleSection: post.category,
+    wordCount: Math.round(post.content.replace(/<[^>]*>/g, '').split(/\s+/).length),
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://motorhomeinsurance.co.nz',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Resources',
+        item: 'https://motorhomeinsurance.co.nz/blog',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: post.title,
+        item: `https://motorhomeinsurance.co.nz/blog/${post.slug}`,
+      },
+    ],
   };
 
   return (
     <>
       <BreadcrumbSchema crumbs={breadcrumbs} />
-      {/* JSON-LD Schema */}
+      {/* JSON-LD Schemas */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero Section */}
       <section

@@ -1,14 +1,111 @@
+# MotorHomeInsurance.co.nz — robots.txt
+# Last updated: 2026-05-16
+
+# Allow all legitimate search engine crawlers
 User-agent: *
 Allow: /
-Sitemap: https://motorhomeinsurance.co.nz/sitemap.xml
+Disallow: /api/
+Disallow: /thank-you
+Crawl-delay: 1
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /thank-you
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /thank-you
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+Disallow: /api/
+Disallow: /thank-you
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /api/
+Disallow: /thank-you
+
+# --- AI SCRAPER BLOCKS ---
+# These bots harvest content for AI training without providing traffic value
+# and impose disproportionate server load
 
 User-agent: GPTBot
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: Google-Extended
-Allow: /
-User-agent: PerplexityBot
-Allow: /
+Disallow: /
+Crawl-delay: 10
+
+User-agent: ChatGPT-User
+Disallow: /
+Crawl-delay: 10
+
+User-agent: CCBot
+Disallow: /
+Crawl-delay: 10
+
 User-agent: anthropic-ai
-Allow: /
+Disallow: /
+Crawl-delay: 10
+
+User-agent: Claude-Web
+Disallow: /
+Crawl-delay: 10
+
+User-agent: ClaudeBot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: PerplexityBot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: Google-Extended
+Disallow: /
+Crawl-delay: 10
+
+User-agent: cohere-ai
+Disallow: /
+Crawl-delay: 10
+
+User-agent: Bytespider
+Disallow: /
+Crawl-delay: 10
+
+User-agent: Omgilibot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: FacebookBot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: Applebot-Extended
+Disallow: /
+Crawl-delay: 10
+
+User-agent: Diffbot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: ImagesiftBot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: Magpie-Crawler
+Disallow: /
+Crawl-delay: 10
+
+User-agent: Webzio-Extended
+Disallow: /
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://motorhomeinsurance.co.nz/sitemap.xml
